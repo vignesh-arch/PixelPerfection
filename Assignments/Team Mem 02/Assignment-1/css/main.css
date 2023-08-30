@@ -1,0 +1,142 @@
+*{
+    text-decoration: none;
+    font-family: Poppins,Poppins1;
+}
+@font-face {
+    font-family: Poppins;
+    src: url(fonts/Poppins/Poppins-SemiBoldItalic.ttf);
+}
+@font-face {
+    font-family: Poppins1;
+    src: url(fonts/Poppins/Poppins-Black.ttf);
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin:0px;
+    background-color: skyblue;
+}
+.header{
+    position: fixed;
+    display:flex;
+    width: 100%;
+    align-items: center;
+    justify-content:space-between;
+    padding:15px;
+    top:0;
+    left:0; 
+    background-color:blueviolet;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    padding:1rem;
+      
+}
+.logo{
+    margin-left:10%;
+    color:#3EB489;
+    font-size:2rem;
+    cursor:default;
+}
+.navbar{
+    margin-right:10%;
+    display: flex;
+}
+.navbar a{
+    padding:0.9rem;
+    color:#3EB489;
+    font-size: 1.1rem;
+}
+.navbar a:hover{
+    color:#19610a;
+
+}
+
+.image img{
+    height:35rem;
+    width:35rem;
+}
+.welcome{
+    display: flex;
+    padding-top:5rem;
+    justify-content: center;
+}
+.welcome-content{
+    margin-left:4rem;
+    padding-top:5.5rem;
+    font-size: 1.0rem;
+    color: #5a855f;
+}
+.span1{
+    font-family: Poppins1;
+    color:#555555;
+    font-weight: 200;
+}
+.social-nav a{
+    margin:4px;
+}
+.social-nav a:hover{
+    opacity: 60%;
+}
+.get{
+    margin-top:2rem;
+    background-color: #3EB489;
+    border-radius:2rem;
+    border:none;
+    padding:1rem;
+    height:fit-content;
+    cursor:pointer;
+    font-family:arial;
+    font-weight: 700;
+    font-size: 1rem;
+    padding-left:2rem;
+    padding-right:2rem;
+    color:#d3ecdc;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+.get:hover{
+    background-color:#b6d4b0;
+    color:black;
+}
+.about{
+    display:flex;
+    justify-content:center;
+    margin-bottom:10rem;
+}
+.about-me{
+    display: flex;
+    margin-left:15%;
+    margin-right:15%;
+    width:70%;
+    box-shadow:0 1px #3EB489;
+}
+.about-me h1{
+    color:#5a855f;
+    font-size:0.9rem;
+}
+.about-me p{
+    font-family:Poppins1;
+    font-size:0.7rem;
+    color:#555555;
+}
+.profile-image img{
+    width: 15rem;
+    height:15rem;
+    border-radius:15%;
+}
+.table{
+    display: flex;
+    justify-content: center;
+    margin-bottom:3rem;
+}
+table{
+
+    font-size:1.0rem;
+    color:#555555;
+    width:100%;
+}
+td{
+    font-family:Poppins1;
+    font-weight:800;
+    padding:7px;
+}
+

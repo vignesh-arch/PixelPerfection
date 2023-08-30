@@ -1,0 +1,109 @@
+html{
+  scroll-behavior: smooth;
+}
+body{
+    background-color: #0c1421;
+    background-size: cover;
+    font-family: 'Poppins', helvetica, PingFang SC, Arial;
+    
+}
+.navbar{
+    overflow: hidden;
+}
+.navbar a{
+    float: right;
+    font-size: 16px;
+    color: whitesmoke;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.dropdown{
+    float: right;
+    overflow: hidden;
+}
+.dropdown .dropbtn{
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: whitesmoke;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn{
+    background-color: #1C3666;
+}
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    background-color: #1C3666;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-menu a{
+    float: none;
+    color: whitesmoke;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-menu a:hover{
+    background-color: #1C3666;
+    color: #04AA6D;
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+.box{
+    margin-left: 100px;
+    margin-right: 550px;
+    margin-bottom: auto;
+    overflow: hidden;
+  }
+  h1{
+      color:white;
+      font-size: 50px;
+    font-family: sans-serif, Arial, Helvetica;
+  }
+  .button {
+    border-radius: 5px;
+    border:none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  .button1 {background-color: #04AA6D;}
+  .button2 {background-color: darkorange;}
+  .input img{
+    width: 350px;
+  }
+  .slider {
+    width: 90%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    margin-left: 5%;
+    border-radius: 1rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  .slider img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width:100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  .slider img.active {
+    opacity: 1;
+  }

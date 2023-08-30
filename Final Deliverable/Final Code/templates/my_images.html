@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Perfection: Transforming your photos with our cutting-edge image editing platform</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/transformed_images.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script>
+        
+        function loadHistory(){
+            var rmbg = JSON.parse('{{rmbg|tojson}}');
+            var carbg = JSON.parse('{{carbg|tojson}}');
+            var boxcut = JSON.parse('{{boxcut|tojson}}');
+            var upscale = JSON.parse('{{upscale|tojson}}');
+            for(i=0;i<rmbg.length;i++){
+                var img = document.createElement('img');
+                img.src = rmbg[i]; 
+                var a = document.createElement('a');
+                a.href = img.src;
+                a.appendChild(img);
+                document.getElementById('rmbg').appendChild(a);
+
+            }
+            for(i=0;i<carbg.length;i++){
+                var img = document.createElement('img');
+                img.src = carbg[i]; 
+                var a = document.createElement('a');
+                a.href = img.src;
+                a.appendChild(img);
+                document.getElementById('carbg').appendChild(a);
+            }
+            for(i=0;i<boxcut.length;i++){
+                var img = document.createElement('img');
+                img.src = boxcut[i]; 
+                var a = document.createElement('a');
+                a.href = img.src;
+                a.appendChild(img);
+                document.getElementById('boxcut').appendChild(a);
+            }
+            for(i=0;i<upscale.length;i++){
+                var img = document.createElement('img');
+                img.src = upscale[i]; 
+                var a = document.createElement('a');
+                a.href = img.src;
+                a.appendChild(img);
+                document.getElementById('upscale').appendChild(a);
+            }
+        }
+        rmbg=document.queryElementById('rmbg')
+        carbg=document.queryElementById('carbg')
+        bowlcut=document.queryElementById('boxcut')
+        upscale=document.queryElementById('upscale')
+        function show_rmbg(){
+            upscale.style.display='none';
+            rmbg.style.display='block';
+            carbg.style.display='none';
+            boxcut.style.display='none';
+        }
+        function show_carbg(){
+            upscale.style.display='none';
+            carbg.style.display='block';
+            rmbg.style.display='none';
+            boxcut.style.display='none';
+        }
+        function show_bowlcut(){
+            upscale.style.display='none';
+            boxcut.style.display='block';
+            carbg.style.display='none';
+            rmbg.style.display='none';
+            
+        }
+        function show_upscale(){
+            upscale.style.display='block';
+            carbg.style.display='none';
+            boxcut.style.display='none';
+            rmbg.style.display='none'
+        }
+    </script>
+</head>
+<body onload="loadHistory()">
+    <div class="navbar">
+        <a href="/logout_user">Logout</a>
+        <div class="dropdown">
+            <button class="dropbtn">IMAGE AI<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#000000" stroke="#000000" width="16" height="15"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title></title> <g id="Complete"> <g id="F-Chevron"> <polyline fill="none" id="Down" points="5 8.5 12 15.5 19 8.5" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polyline> </g> </g> </g></svg></button>
+            <div class="dropdown-menu">
+                <a href="/rmbg">Remove Background</a>
+                <a href="/vehrm">Remove Vehicle Background</a>
+                <a href="/cartoon">Bowl Cut</a>
+                <a href="/upscale_ui">Upscale</a>
+            </div>
+        </div>
+        <a href="/about">About</a>
+        <a href="/" style="color:red;">Home</a>
+    </div>
+    <h1>Your Images</h1>
+    <div class="navbar1">
+        <button onclick="show_rmbg()" >REMOVEBG</button>
+        <button onclick="show_carbg()">REMOVECARBG</button>
+        <button onclick="show_bowlcut()">BOWLCUT</button>
+        <button onclick="show_upscale()">UPSCALE</button>
+    </div><br>
+    <div class="imgdiv" >
+        <div class="rmbg" id="rmbg"></div>
+        <div style="display: none;" class="carbg" id="carbg"></div>
+        <div style="display: none;" class="boxcut" id="boxcut"></div>
+        <div style="display: none;" class="upscale" id="upscale"></div>
+    </div>
+    
+</body>
+</html>

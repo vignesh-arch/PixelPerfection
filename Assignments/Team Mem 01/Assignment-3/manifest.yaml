@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vishal
+  labels:
+    app: vishal
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: vishal
+  template:
+    metadata:
+      labels:
+        app: vishal
+    spec:
+      containers:
+      - name: vishal
+        image: uk.icr.io/vishal/myapp
+        ports:
+        - containerPort: 5000

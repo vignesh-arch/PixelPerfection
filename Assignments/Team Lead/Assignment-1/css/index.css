@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Roboto');
+body{
+    margin:0;
+    padding:0;
+    height:100%;
+    scroll-behavior: smooth;
+     background-color:#FEFCF3;
+}
+.navbar{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color:#FEFCF3;
+}
+.icon{
+    top:0;
+    float:right;
+    font-size: 5.5em;
+	  color: black;
+	  background-color:#FEFCF3 ;
+	  border:none;
+	  }
+        
+.icon:hover {
+	  color: black ;
+    cursor:pointer;
+    opacity: 50%;
+    border-radius: 5px;
+	}
+
+.menu{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #FEFCF3;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+    
+}
+.menu a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 40px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.menu .c {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+menu a:hover{
+    padding:25px;
+}
+
+
+
+
+section{
+    margin-top:8px; 
+    margin:auto;
+}
+.image img{
+    height:35rem;
+    width:35rem;
+    background-color: #FEFCF3 ;
+}
+.welcome{
+    display: flex;
+    padding-top:5rem;
+    margin:auto;
+    justify-content: center;
+}
+.welcome-content{
+    margin-left:4rem;
+    padding-top:5.5rem;
+    font-size: 1.5rem;
+    color: #5a855f;
+}
+#navabar {
+  transition: margin-right .5s;
+  padding: 16px;
+}
+@media screen and (max-height: 450px) {
+  .menu {padding-top: 15px;}
+  .menu a {font-size: 18px;}
+}
+.welcome{
+  display: flex;
+  padding-top:5rem;
+  margin:auto;
+  justify-content: center;
+}
+.welcome-content{
+  margin-left:4rem;
+  padding-top:5.5rem;
+  font-size: 1rem;
+  color: #5a855f;
+}
+.span1{
+  font-family: Poppins1;
+  color:#555555;
+  font-weight: 20;
+}
+.social-nav a{
+  margin:4px;
+}
+.social-nav img{
+   height: 1.5em;
+   width: 1.5em;
+}
+.social-nav a:hover{
+  opacity: 60%;
+}
+.get{
+  margin-top:2rem;
+  background-color: #3EB489;
+  border-radius:2rem;
+  border:none;
+  padding:1rem;
+  height:fit-content;
+  cursor:pointer;
+  font-family:arial;
+  font-weight: 700;
+  font-size: 1rem;
+  padding-left:2rem;
+  padding-right:2rem;
+  color:#d3ecdc;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+.get:hover{
+  background-color:#b6d4b0;
+  color:black;
+}
+.wave{
+  border:none;
+  margin:0px;
+  padding:0px;
+}
+.about{
+  display:flex;
+  justify-content:center;
+  margin-bottom: 8rem;
+}
+.about-me{
+  display: flex;
+  margin-top:1rem;
+  margin-left:13rem;
+  margin-right:13rem;
+  background-color:#87CBB9;
+  box-shadow: 0 2px 4px 0 #3EB489;
+  padding:4rem;
+  border-radius:3rem;
+}
+.about-me h1{
+  color:#5a855f;
+  font-size:2rem;
+}
+.about-me p{
+  font-family:Poppins1;
+  font-size:1.5rem;
+  color:#555555;
+}
+.profile-image{
+  margin-left:1.5rem;
+  padding-top:2.5rem;
+}
+.profile-image img{
+  width: 15rem;
+  height:15rem;
+  border-radius:15%;
+}
+table{
+  padding:1rem;
+  padding-left:4rem;
+  font-size:1.3rem;
+  color:#555555;
+  width:50rem;
+}
+td{
+  font-family:Poppins1;
+  font-weight:800;
+  padding:7px;
+}
+
+.wrapper.one {
+    background-color: #ffffff;
+}
+.drop-main {
+    display: flex;
+    font-size: 3rem;
+    margin-top:8px; 
+    margin:auto;
+    font-family: "Anton", sans-serif;
+    background-color:#FEFCF3
+}
+.h  {
+    opacity: 0;
+    animation: drop 0s linear forwards;
+   
+}
+.e {
+    opacity: 0;
+    animation: drop 0.8s linear forwards;
+    
+}
+.l {
+    opacity: 0;
+    animation: drop 1.3s linear forwards;
+  
+}
+.l1 {
+    opacity: 0;
+    animation: drop 1.6s linear forwards;
+   
+}
+.o {
+    opacity: 0;
+    animation: drop 2.0s linear forwards;
+ 
+}
+.z {
+    opacity: 0;
+    animation: drop 2.7s linear forwards;
+  
+}
+@keyframes drop {
+    0%{
+        transform: translateY(0px);opacity: 0;
+    }
+    25%{
+        transform: translateY(0px) ;opacity: 1;
+    }
+    50%{
+        transform: translateY(0px);
+        opacity: 0;
+    }
+    65%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    75%{
+        transform: translateY(0px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+.cont{
+  display: inline-block;
+}
+.type{
+  overflow: hidden;
+  white-space: nowrap;
+  animation: 
+    typing 2.7s forwards;
+  font-size: 2rem;
+  width: 0;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+

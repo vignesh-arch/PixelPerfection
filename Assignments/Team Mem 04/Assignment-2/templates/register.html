@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <link rel="stylesheet" href="../static/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <body>
+        <div class="main">
+            <div class="container">
+                <h1>WELCOME</h1>
+                <form action="/register1" method="post">  
+                    <div class="container_a">
+                        <label>Username</label>
+                        <input type="text" placeholder="Username" name="username" required>
+                        <label>Email</label>
+                        <input type="text" placeholder="abc@gmail.com" name="email" required>
+                        <label>Password</label>
+                        <input type="password" placeholder="Password" name="password" required>
+                        <button type="submit">Register</button>
+                        <p>Already a user?<a href={{url_for('login1')}}>Sign In</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vignesh
+  labels:
+    app: vignesh
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: vignesh
+  template:
+    metadata:
+      labels:
+        app: vignesh
+    spec:
+      containers:
+      - name: vignesh
+        image: uk.icr.io/vignesh/app
+        ports:
+        - containerPort: 5000

@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sandy1
+  labels:
+    app: sandy1
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: sandy1
+  template:
+    metadata:
+      labels:
+        app: sandy1
+    spec:
+      containers:
+      - name: sandy1
+        image: uk.icr.io/santhosh/app
+        ports:
+        - containerPort: 5000

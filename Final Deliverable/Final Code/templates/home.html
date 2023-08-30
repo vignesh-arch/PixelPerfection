@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/home.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+      {% if "logged" == log %}
+        <a id="logout" href="/logout_user">Logout</a>
+      {% else %}
+        <a id="login" href="/login">Login</a>
+      {% endif %}
+        <div class="dropdown">
+            <button class="dropbtn">IMAGE AI<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#000000" stroke="#000000" width="16" height="15"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title></title> <g id="Complete"> <g id="F-Chevron"> <polyline fill="none" id="Down" points="5 8.5 12 15.5 19 8.5" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polyline> </g> </g> </g></svg></button>
+            <div class="dropdown-menu">
+                <a href="/rmbg">Remove Background</a>
+                <a href="/vehrm">Remove Vehicle Background</a>
+                <a href="/cartoon">Bowl Cut</a>
+                <a href="/upscale_ui">Upscale</a>
+            </div>
+        </div>
+        <a href="#About">About</a>
+        <a href="#TESTIMONIALS">Testimonials</a>
+        <a href="/" style="color:red;">Home</a>
+    </div>
+
+    <div class="box">
+        <h1>Get <span style="color: red">ready</span> for generating your unique <br>images<span style="color: red"> for free</span></h1>
+        
+        <hr style="height:5px; width:11%;background-color:white;margin-left:0px">
+        <br>
+        <p style="color:white; text-decoration: none; line-height: 150%;">Al image generators can be used for a wide range of applications, from creating realistic digital art and visual 
+          effects in movies and video games, to generating photorealistic images of products for e- commerce websites. 
+          They can also be used to generate images for scientific research, such as creating simulations of complex biological systems 
+          or generating images of astronomical phenomena.
+        </p><br>
+        <button class="button button1">Discover more</button>
+        <button class="button button2"><a href="#contact"style="text-decoration:none;color:white;">contact us</button></a>
+        </div>
+            <h2 style="color:white;text-align: center;"id="TESTIMONIALS">TESTIMONIALS</h2>
+            <div class="slider">
+                <img src="{{ url_for('static',filename='css/1.jpeg') }}"class="active">
+                <img src="{{ url_for('static',filename='css/2.jpeg') }}">
+                <img src="{{ url_for('static',filename='css/3.jpeg') }}">
+                <img src="{{ url_for('static',filename='css/4.jpeg') }}">
+                <img src="{{ url_for('static',filename='css/5.jpeg') }}">
+              </div>
+              <script>
+                // JavaScript for the image slider
+                let images = document.querySelectorAll('.slider img');
+                let current = 0;
+                setInterval(function() {
+                  images[current].classList.remove('active');
+                  current = (current + 1) % images.length;
+                  images[current].classList.add('active');
+                }, 2500);
+              </script>
+        </div>
+        <div style="height: 150px;">
+            <h2 style="color:white;text-align: center;"id="contact">CONTACT US</h2>
+            <P style="color:white; text-decoration: none; line-height: 150%;text-align: center;">EMAIL:project13112k@gmail.com<br>
+            PHONE NO: +91 6382916639<br>
+             </p>
+                   </div>
+        <div>
+          <h2 style="color:white;text-align: center;"id="About">ABOUT US</h2>
+          <P style="color:white; text-decoration: none; line-height: 150%;text-align: center;">Creating pixel-perfect designs to bring your vision to life.</p>
+          <P style="color:white; text-decoration: none; line-height: 150%;text-align: center;"id="About">"Join us at Pixel Perfection and unlock your creative potential. Transform your photos into visually striking works of art with our state-of-the-art image editing platform. Experience the joy of pixel-perfect perfection with just a few clicks"</P>
+              
+        </div>
+</body>
+</html>

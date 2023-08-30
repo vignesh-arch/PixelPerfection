@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Perfection: Transforming your photos with our cutting-edge image editing platform</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/transformed_images.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <a href="/logout_user">Logout</a>
+        <div class="dropdown">
+            <button class="dropbtn">IMAGE AI<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#000000" stroke="#000000" width="16" height="15"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title></title> <g id="Complete"> <g id="F-Chevron"> <polyline fill="none" id="Down" points="5 8.5 12 15.5 19 8.5" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polyline> </g> </g> </g></svg></button>
+            <div class="dropdown-menu">
+                <a href="/rmbg">Remove Background</a>
+                <a href="/vehrm">Remove Vehicle Background</a>
+                <a href="/cartoon">Cartoon</a>
+                <a href="/beauty">Beauty</a>
+            </div>
+        </div>
+        <a href="/about">About</a>
+        <a href="/" style="color:red;">Home</a>
+    </div>
+    <h1>Transformed Images</h1>
+    <div class="navbar1">
+        <a href="/beauty">Beauty Image</a>
+        <a href="/rmbg">Bg Remove Img</a>
+        <a href="/vehrm">Vehicle Bg Img</a>
+        <a href="/cartoon">Cartoon Image</a>
+    </div><br>
+    <div class="imgdiv"></div>
+</body>
+</html>

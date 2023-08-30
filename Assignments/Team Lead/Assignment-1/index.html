@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="index.js"></script>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+</head>
+<body>
+    <div id="main" class="main">
+    <div id="navbar" class="navbar">
+     <button onclick="openNav()" class="m icon material-icons" style="font-size:2.5em">menu</button>
+     </div>
+     <div id="menu" class="menu">
+         <button onclick="closeNav()" class="c icon material-icons" style="font-size:2.5em;">close</button>
+         <ul class="opt" style="font-size:4.5em;list-style:none">
+           <a href="#about" ><li>About</li></a>
+           <a href="" ><li>Skill</li></a>
+           <a href="" ><li>Expertise</li></a>
+           <a href="" ><li>Portfolio</li></a>
+           <a href="" ><li>Content</li></a>
+           
+         </ul>    
+     </div>
+     <section class="section1">
+            <div class="welcome">
+                <div class="image"><img src="image/welcom.svg" alt="hello"></div>
+                <div class="welcome-content">
+                    <div class="wrapper one">
+                       <div class="drop-main">
+                            <div class="h">H</div>
+                            <div class="e">E</div>
+                            <div class="l">L</div>
+                            <div class="l1">L</div>
+                            <div class="o">O</div>
+                            <div class="z">;</div>
+                            
+                       </div>
+                    </div>
+                    <div class="cont">
+                    <h1 class="type span1">I'm Perumal Raj A <br>Web Developer & <br>Mobile Application Developer</h1>
+                    </div>
+                    <nav class="social-nav">
+                        <a href="#"><img src="https://img.icons8.com/ios-filled/50/40C057/facebook-new.png"/></a>
+                       
+                        <a href="#"><img src="https://img.icons8.com/ios-filled/50/40C057/instagram-new--v1.png"/></a>
+                        <a href="#"><img src="https://img.icons8.com/ios-filled/50/40C057/twitter-circled--v1.png"/></a>
+                        <a href="#"><img src="https://img.icons8.com/ios-filled/50/40C057/linkedin.png"/></a>
+                        <a href="#"><img src="https://img.icons8.com/ios-filled/50/40C057/youtube-play.png"/></a>
+                    </nav>
+                    <button class="get">Get in Touch</button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="about" class="about">
+             <div class="about-me">
+                 <div>
+                     <h1>Hello! I'm Perumal Raj A.</h1>
+                     <p>I am passionate about Android Development and UI/UX Designer.I am a skilled Android Developer and master of graphic 
+                         designing graphic designing tools such as Photoshop,After Effects.I am a quick learner and a team worker that gets the 
+                     job done.I can quickly maximize timely deliverables for real-time schemas.
+                     </p>
+                     <div style="display:flex;">
+                     <table>
+                         <tr>
+                             <td>Age</td>
+                             <td>19</td>
+                         </tr>
+                         <tr>
+                             <td>Email</td>
+                             <td>perumalraj024@gmail.com</td>
+                         </tr>
+                         <tr>
+                             <td>Phone</td>
+                             <td>+916382916639</td>
+                         </tr>
+                         <tr>
+                             <td>Address</td>
+                             <td>TamilNadu,India</td>
+                         </tr>
+                         <tr>
+                             <td>Status</td>
+                             <td>Available</td>
+                         </tr>
+                     </table>
+
+                 <div class="profile-image">
+                     <img src="image/profile.jpg"/>
+                 </div>
+                 </div>
+                </div>
+             </div>
+            </div>
+         </section>
+     
+    </div>
+
+<script>
+    function closeNav() {
+  document.getElementById("menu").style.width = "0";
+  document.getElementById("main").style.marginRight= "0";
+  }
+function openNav() {
+  document.getElementById("menu").style.width = "350px";
+  document.getElementById("main").style.marginRight= "250px";
+  }
+  </script>
+</body>
+</html>

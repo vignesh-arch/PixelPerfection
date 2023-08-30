@@ -1,0 +1,112 @@
+body{
+    background-color: #3e4a61;
+    font-family: 'Poppins', sans-serif;
+}
+.main{
+    margin-top:8%;
+}
+@media only screen and (max-width:600px) {
+    div[class*="container"]{
+        width:95%;
+        margin:auto;
+    }
+}
+@media only screen and (max-width:900px) {
+    div[class*="container"]{
+        width: 70%;
+        margin:auto;
+    }
+}
+.container{
+    margin:auto;
+    width:40%;
+    background-color:#D1C4E9 ;
+    padding:4%;
+    border-radius:25px ;
+    background-color: #fffdf6;
+}
+.container h1{
+    text-align: center;
+    margin:3%;
+}
+.container_a{
+    display: flex;
+    flex-direction: column;
+}
+.container_a input{
+    padding:2%;
+    margin-bottom: 3%;
+    font-size: 1rem;
+    border-radius: 4px;   
+    border-color: #3e4a61;
+    border:none;
+	background-color:#3e4a61;
+	color:#ffffff
+}
+.container_a input:focus{
+    background-color:#FFF8E1;
+    outline:none;
+    color:rgb(0, 0, 0);
+}
+.container_a label,p{
+    margin-left:1%;
+    font-size:1.2rem;
+    margin-bottom:2%;
+}
+button{
+    padding:1%;
+    border-radius:9px;
+    color:rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
+    border:none;
+    font-size: 1.2rem;
+    cursor:pointer;
+    margin-bottom:3%;
+    background-color:#66347F;
+}
+.container_a button:hover{
+    background-color: #b55bea;
+    color:rgb(255, 255, 255);
+    border-style: solid;
+    border-width:2px;
+    border-color:#66347F;
+}
+.sign_out{
+    text-align: center;
+}
+*{padding:0;margin:0}
+.wrapper{
+    display:flex;
+    justify-content:center;
+    align-items:center;}
+.checkmark__circle{
+    stroke-dasharray: 166;
+    stroke-dashoffset: 166;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+    stroke: #66347F;
+    fill: none;
+    animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards}
+.checkmark{
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: block;
+    stroke-width: 2;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+    margin: 10% auto;
+    box-shadow: inset 0px 0px 0px #66347F;animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both}
+.checkmark__check{
+    transform-origin: 50% 50%;
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+    animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards}
+@keyframes stroke{
+    100%{stroke-dashoffset: 0}}
+@keyframes scale{
+    0%, 100%{transform: none}50%{transform: scale3d(1.1, 1.1, 1)}}
+@keyframes fill{100%{box-shadow: inset 0px 0px 0px 30px #66347F}}
+p{
+    margin-top:4%;
+}

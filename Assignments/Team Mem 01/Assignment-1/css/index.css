@@ -1,0 +1,50 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav{
+    justify-content: right;
+    margin-left: 45px;
+    margin-right: 45px;
+    display: flex;
+}
+li{
+    display: inline;
+    float: left;
+}
+a{
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+}
+.second{
+    display: flex;
+    height: 300px;
+    margin-left: 45px;
+    margin-right: 45px;
+}
+.sec1{
+    width: 50%;
+    padding-left: 100px;
+}
+.sec2{
+    width: 50%;
+}
+span{
+    border-bottom: 5px solid yellow;
+}
+.abt{
+    display: flex;
+    margin-left: 45px;
+    margin-right: 45px;
+}
+.abt1{
+    width: 50%;
+    padding-top: 15px;
+    padding-left: 100px;
+}
+.abt2{
+    width: 50%;
+    padding-right: 100px;
+    line-height: 30px;
+}

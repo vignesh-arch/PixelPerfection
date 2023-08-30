@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Register Page</title>
+
+	<style>
+		.log{
+			margin: auto;
+    		width: 50%;
+			height: auto;
+    		color: white;
+			background: linear-gradient(rgba(17, 32, 61, 0.8), rgba(17, 32, 61, 0.8));
+    		font-family: Arial, Helvetica, sans-serif;
+			padding: 5%;
+			box-shadow: rgba(100, 100, 111, 0.9) 0px 7px 29px 0px;
+			border-radius: 2rem;
+		}
+		input[type=text], input[type=password]{
+    		width: 80%;
+    		margin: 8px 0;
+    		padding: 12px 20px;
+    		display: inline-block;
+    		border: none;
+    		border-radius: 10px;
+    		background-color: #5E687B;
+    		color: white;
+    		outline: none;
+		}
+		input[type=text]:focus, input[type=password]:focus{
+			background-color: white;
+			color: #0C1421;
+    		outline: 1px solid white;
+		}
+		.logbtn{
+    		margin: 8px 0;
+    		padding: 12px 20px;
+    		background-color: darkorange;
+    		border-radius: 5px;
+    		border: none;
+    		color: white;
+    		cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div class="log">
+		<h1 style="text-align: center;">Register Here</h1>
+		<form action="/register1" method="post">
+			<label>Enter Name</label><br>
+			<input type="text" name="NAME" placeholder="name" required=""><br><br>
+			<label>Enter Email</label><br>
+			<input type="text" name="EMAIL" placeholder="youremail@gmail.com" required=""><br><br>
+			<label>Enter Password</label><br>
+			<input type="password" name="PASSWORD" placeholder="password" required=""><br><br>
+			<button class="logbtn">Submit Now</button>
+		</form>
+		{{pred}}
+		<br>
+		Already have an account ?&nbsp;&nbsp;<a href="/" style="text-decoration: none; color:red;">Login</a>
+	</div>
+</body>
+</html>

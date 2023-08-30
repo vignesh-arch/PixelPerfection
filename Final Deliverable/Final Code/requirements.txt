@@ -1,0 +1,8 @@
+Flask
+ibm_db
+replicate
+ibm-cos-sdk
+boto3
+botocore
+requests
+

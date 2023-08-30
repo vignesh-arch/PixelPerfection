@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login Page</title>
+	<style>
+	body{
+				background-image: url({{ url_for ('static', filename = 'login.jpg') }});
+		}
+		.log{
+			text-align: center;
+			margin: auto;
+    			width: 30%;
+			height:8%;
+    			color: white;
+    			font-family: Arial, Helvetica, sans-serif;
+			padding:1%;
+			box-shadow: rgba(100, 100, 111, 0.9) 0px 7px 29px 0px;
+			border-radius: 2rem;
+		}
+.sandy{
+
+margin-top:8%;
+}
+		opacity: 0.0;
+		input[type=text], input[type=password]{
+    		width: 80%;
+    		margin: 8px 0;
+    		padding: 12px 20px;
+    		display: inline-block;
+    		border: none;
+    		border-radius: 20px;
+    		background-color: #5E687B;
+    		color: white;
+    		outline: none;
+		}
+		input[type=text]:focus, input[type=password]:focus{
+    		background-color: white;
+			color: #0C1421;
+    		outline: 1px solid white;
+		}
+		.logbtn{
+    		margin: 8px 0;
+    		padding: 12px 20px;
+    		background-color:blue;
+    		border-radius: 10px;
+    		border: none;
+    		color: white;
+    		cursor: pointer;
+		}
+ 	</style>
+</head>
+<body>
+	<div class="sandy">
+	<div class="log">
+		<h1 style="text-align: center;">Login Here</h1>
+		<form action="/login1" method="post">
+			<label>Enter Name</label><br>
+			<input type="text" name="NAME" required=""><br><br>
+			<label>Enter Password</label><br>
+			<input type="password" name="PASSWORD" placeholder="password" required=""><br><br>
+			<button class="logbtn">Submit Now</button>
+		</form>
+		{{pred}}
+		<br>
+		You don't Have an account ?<br><a href="/register" style="text-decoration: none; color:red;">Register Here</a>
+	</div>
+</div>
+</body>
+</html>

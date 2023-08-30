@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <script type="text/javascript">
+            var a ="{{pred}}"
+            var b=a.toString();
+            function toggle_signout(){
+                signb=document.querySelector('.sign_out')
+                cont=document.querySelector('.container_a')
+                if(b.localeCompare("Login Successful")==0){
+                    signb.style.visibility = 'visible'
+                    cont.style.display='none'
+                }else{
+                    signb.style.visibility = 'hidden'
+                }
+            }
+
+        </script>
+    </head>
+    <link rel="stylesheet" href="../static/css/main.css">
+    <body onload="toggle_signout()">
+        <div class="main">
+            <div class="container">
+                <form action="/login" method="post">
+                    <h1>Login</h1>
+                    <div class="container_a">
+                        <label>Name</label>
+                        <input type="text" placeholder="Username" name="name" required>
+                        <label>Password</label>
+                        <input type="password" placeholder="Password" name="password" required>
+                        <button type="submit">Sign In</button>
+                        <p>Don't have an account?<a href={{url_for('register')}}>Register</a></p>
+                        <p style="color:rgb(245, 209, 209);">{{pred}}</p>
+                    </div>
+                    
+                    <div class="sign_out">
+                        <div class="wrapper"> <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"> <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/> <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                        </svg>
+                        </div>
+                        <p style="color:rgb(245, 209, 209);">{{pred}}</p>
+                        <form action="/signout" method="post">
+                            <button type="submit" style="padding:12px;">Sign Out</button>
+                        </form>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

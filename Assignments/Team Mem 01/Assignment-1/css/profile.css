@@ -1,0 +1,23 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: whitesmoke;
+    text-align: center;
+    
+}
+.pic{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.box{
+    background-color: #525462;
+    margin-right: 400px;
+    margin-left: 400px;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: center;
+    color: whitesmoke;
+    height: 200px;
+    line-height: 28px;
+}
